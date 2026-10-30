@@ -1,0 +1,15 @@
+{
+  "name": "merchhive-fsd",
+  "version": "1.0.0",
+  "description": "MerchHive B2B Wholesale E-Commerce Platform",
+  "scripts": {
+    "start": "npm start --prefix server",
+    "server": "npm start --prefix server",
+    "client": "npm run dev --prefix client",
+    "seed": "npm run seed --prefix server",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
